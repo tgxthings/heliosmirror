@@ -69,7 +69,7 @@ class TgUploader:
 
     def __upload_file(self, up_path, file_, dirpath):
         if CUSTOM_FILENAME is not None:
-            cap_mono = f"<i><b>{file_}</b></i>\n<b>╔═══════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══════╗\n<b>ᴄʜᴀɴɴᴇʟ</b>  :- <a href=https://t.me/CBMainChannel>📣Cinema Beacon📣</a>\n<b>ɢʀᴏᴜᴘ</b>      :- <a href=https://t.me/Cinema_Beacon_Group>🎬Cinema Beacon Group🎬</a>\n<b>ᴘsᴀ ʀɪᴘs</b>  :- <a href=https://t.me/CB_PSARIPS1>💀CB PSA Rips💀</a>\n╚═══════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══════╝</b>"
+            cap_mono = f"{CUSTOM_FILENAME} <i><b>{file_}</b></i>\n<b>╔═══════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══════╗\n<b>ᴄʜᴀɴɴᴇʟ</b>  :- <a href=https://t.me/CBMainChannel>📣Cinema Beacon📣</a>\n<b>ɢʀᴏᴜᴘ</b>      :- <a href=https://t.me/Cinema_Beacon_Group>🎬Cinema Beacon Group🎬</a>\n<b>ᴘsᴀ ʀɪᴘs</b>  :- <a href=https://t.me/CB_PSARIPS1>💀CB PSA Rips💀</a>\n╚═══════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══════╝</b>"
             file_ = f"{CUSTOM_FILENAME} {file_}"
             new_path = ospath.join(dirpath, file_)
             osrename(up_path, new_path)
